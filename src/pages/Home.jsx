@@ -46,6 +46,13 @@ const projects = [
   },
   {
     icon: MdDownload,
+    title: 'Mentalyc demo',
+    code: 'https://github.com/Omar-bit/mentalyc',
+    demo: 'https://mentalyc-demo.netlify.app/',
+  },
+
+  {
+    icon: MdDownload,
     title: 'BirthMate',
     code: 'https://github.com/Omar-bit/mentalyc',
     demo: 'https://mentalyc-demo.netlify.app/',

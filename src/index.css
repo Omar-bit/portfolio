@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  font-family: 'Chakra Petch', sans-serif;
+
+  color: white;
+}
+.glass {
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.6px);
+  -webkit-backdrop-filter: blur(8.6px);
+  border: 1px solid rgba(27, 27, 27, 0.65);
+  opacity: 0.85;
+}
+.glower {
+  backdrop-filter: blur(8.6px);
+  -webkit-backdrop-filter: blur(8.6px);
+  position: absolute;
+  z-index: 0;
+  box-shadow: 30px 5px 150px 200px #956afa, -30px -5px 150px 200px #42174b;
+  width: 0;
+  height: 0;
+  left: 0;
+  opacity: 0.7;
+  transition: 0.5s;
+  animation: tour 30s infinite linear alternate;
+}
+@keyframes tour {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(500px, 300px);
+  }
+  50% {
+    transform: translate(1000px, 200px);
+  }
+  75% {
+    transform: translate(100px, 700px);
+  }
+  100% {
+    transform: translate(800px, 600px);
+  }
+}

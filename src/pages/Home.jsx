@@ -40,6 +40,12 @@ import { RiGraduationCapFill } from 'react-icons/ri';
 const projects = [
   {
     icon: MdDownload,
+    title: 'FlyMate',
+    code: 'https://github.com/Omar-bit/FlyMate',
+    demo: '',
+  },
+  {
+    icon: MdDownload,
     title: 'Stock Management',
     code: 'https://github.com/Omar-bit/stock-management',
     demo: '',
@@ -187,17 +193,31 @@ function Home() {
           </div>
         </Article>
         <Article
-          icon={<GiMeshBall className=' size-5' />}
           title={
             <span>
-              Tech I<span className='font-bold'> Love</span>
+              <span className='font-bold'>My</span> Education
             </span>
           }
+          icon={<RiGraduationCapFill className='size-5' />}
         >
-          <div className='  grid grid-cols-5  gap-2  mt-2'>
-            {technologies.map((tech) => (
-              <div className=' aspect-square flex items-center justify-center'>
-                <img className='  ' src={tech.icon} title={tech.title} />
+          <div className='space-y-1 mt-3'>
+            {[
+              {
+                year: '2022-2025',
+                title: "Bachelor's Degree in Computer Science, ISITCOM",
+              },
+              {
+                year: '2021-2022',
+                title:
+                  'Baccalaureate, computer science Section, Lycée Othman chatti msaken',
+              },
+            ].map((ed) => (
+              <div
+                key={ed.year}
+                className='p-2 bg-black rounded-md flex flex-col justify-between  shadow-md'
+              >
+                <div className=' text-sm block'>{ed.year}</div>
+                <div className=' block text-sm'>{ed.title}</div>
               </div>
             ))}
           </div>
@@ -218,8 +238,16 @@ function Home() {
           <div className='space-y-1 mt-3'>
             {[
               {
+                year: 'Jan 2025 - Jun 2025',
+                title: 'Software Developer at WebTrend Inc',
+              },
+              {
+                year: 'Mar 2025',
+                title: 'ARSII TWISE NIGHT Hackathon Winner',
+              },
+              {
                 year: 'Feb 2024 - Oct 2024',
-                title: 'Fullstack developer at Mentalyc Inc',
+                title: 'Fullstack Developer at Mentalyc Inc',
               },
               {
                 year: 'Jan 2024',
@@ -240,38 +268,22 @@ function Home() {
             ))}
           </div>
         </Article>
-
         <Article
+          icon={<GiMeshBall className=' size-5' />}
           title={
             <span>
-              <span className='font-bold'>My</span> Education
+              Tech I<span className='font-bold'> Love</span>
             </span>
           }
-          icon={<RiGraduationCapFill className='size-5' />}
         >
-          <div className='space-y-1 mt-3'>
-            {[
-              {
-                year: '2022-...',
-                title: "Bachelor's Degree in Computer Science, ISITCOM",
-              },
-              {
-                year: '2021-2022',
-                title:
-                  'Baccalaureate, computer science Section, Lycée Othman chatti msaken',
-              },
-            ].map((ed) => (
-              <div
-                key={ed.year}
-                className='p-2 bg-black rounded-md flex flex-col justify-between  shadow-md'
-              >
-                <div className=' text-sm block'>{ed.year}</div>
-                <div className=' block text-sm'>{ed.title}</div>
+          <div className='  grid grid-cols-5  gap-2  mt-2'>
+            {technologies.map((tech) => (
+              <div className=' aspect-square flex items-center justify-center'>
+                <img className='  ' src={tech.icon} title={tech.title} />
               </div>
             ))}
           </div>
         </Article>
-
         {isMobile && (
           <>
             <Contact />

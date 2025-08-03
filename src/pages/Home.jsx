@@ -92,7 +92,7 @@ const contacts = [
   },
   {
     icon: LinkedIn,
-    link: 'https://www.linkedin.com/in/omar-bouassida-7691aa201/',
+    link: 'https://www.linkedin.com/in/omar-bouassida/',
     type: 'external',
   },
   {

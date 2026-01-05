@@ -40,6 +40,13 @@ import { RiGraduationCapFill } from 'react-icons/ri';
 const projects = [
   {
     icon: MdDownload,
+    title: 'Curehub',
+    code: 'https://github.com/Omar-bit/curehub',
+    demo: 'https://agenda.bocall.ovh/',
+  }
+  ,
+  {
+    icon: MdDownload,
     title: 'FlyMate',
     code: 'https://github.com/Omar-bit/FlyMate',
     demo: '',
